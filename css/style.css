@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  gap: 10px; /* Adds space between the items */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* Adjust for the number of columns */
+  gap: 10px;
+  width: 200px; /* Adjust based on design */
+  margin: 20px auto;
+}
+.cell {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#terminal{
+  margin-top: 20px;
+  flex: 1;
+  height: 550px;
+}
+#matrix{
+  flex: 2;
+}
+#terminal textarea {
+
+  height: 100%; /* Take the full height of the container */
+  resize: none; /* Disable resizing by the user */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  border: none; /* Remove default border */
+  padding: 10px; /* Add some padding for text */
+  font-size: 16px; /* Set font size for better readability */
+  line-height: 1.5; /* Adjust line spacing */
+  background-color: black;
+  font-style: italic;
+  color: white;
+}
+
